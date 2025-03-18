@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/tic-tac-toe2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>XO Game</title>
+</head>
+<body>
+    
+    <div class="title">
+        <h1>XO Game</h1>
+    </div>
+
+    <div class="display">
+        It's <span class="current-player playerX">X</span>'s Player Turn
+    </div>
+    <div class="scoreboard">
+      <div id="scoreX">Player X: 0</div>
+      <div id="scoreO">Player O: 0</div>
+  </div>
+  
+
+    <div class="game-grid">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+    <div class="display announce hide">Player X wins</div>
+<center>
+  <div class="Newgame">
+    <button id="newgame">Newgame</button>
+</div>
+<br>
+<div class="restart">
+  <button id="reset">Reset</button>
+</div>
+</center>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
