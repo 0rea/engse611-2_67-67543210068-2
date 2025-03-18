@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tab Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tab-container">
+    <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">To-Do List</button>
+        <button class="tab-button" data-tab="tab2">Image Gallery</button>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+            <div class="todo-container">
+                <h1>To-Do List</h1>
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="Add new task...">
+                    <button id="addTask">Add</button>
+                </div>
+                <ul id="todoList"></ul>
+                <div class="actions">
+                    <button id="clearCompleted">Clear Completed</button>
+                    <button id="clearAll">Clear All</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab2">
+            <div class="gallery-container">
+                <div class="large-image-container">
+                    <img id="largeImage" class="large-image" src="https://wallpapercave.com/wp/wp9816781.jpg" alt="Large Image">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="https://wallpapercave.com/wp/wp9816781.jpg" alt="Thumbnail 1" data-large="https://wallpapercave.com/wp/wp9816781.jpg">
+                    <img class="thumbnail" src="https://wallpapercave.com/wp/wp9816768.jpg" alt="Thumbnail 2" data-large="https://wallpapercave.com/wp/wp9816768.jpg">
+                    <img class="thumbnail" src="https://wallpapercave.com/wp/wp9816789.png" alt="Thumbnail 3" data-large="https://wallpapercave.com/wp/wp9816789.png">
+                    <img class="thumbnail" src="https://wallpapercave.com/wp/wp4334674.png" alt="Thumbnail 4" data-large="https://wallpapercave.com/wp/wp4334674.png">
+                    <img class="thumbnail" src="https://wallpapercave.com/wp/wp6514533.jpg" alt="Thumbnail 5" data-large="https://wallpapercave.com/wp/wp6514533.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
